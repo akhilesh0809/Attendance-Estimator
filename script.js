@@ -13,6 +13,7 @@ function validateForm() {
     desired = desired / 100;
     console.log("desired: " + desired);
     let x = (desired * totClasses - attended) / (1 - desired);
+    x = Math.ceil(x);
     console.log("x: " + Math.ceil(x));
      
     let daysNeeded = Math.floor(x / classes);
